@@ -23,7 +23,7 @@ const ContactForm = () => {
           data-netlify="true"
           netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
-          className="space-y-6"
+          className="space-y-6 bg-white p-6 rounded-lg shadow-md" // Add bg-white class for white background
         >
           {/* Hidden field to identify the form */}
           <input type="hidden" name="form-name" value="contact" />
