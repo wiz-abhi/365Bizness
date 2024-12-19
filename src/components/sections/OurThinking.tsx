@@ -19,8 +19,12 @@ const OurThinking = () => {
               Building a business entails meticulous attention to detail. This is precisely why we are here to assist you.
             </p>
             <p className="text-xl font-semibold text-cyan-400 mb-4">
-              PLAN→IMPLEMENT→TRANSFORMATION
+            PLAN→IMPLEMENT
+            <span className="block sm:inline">→TRANSFORMATION</span>
             </p>
+
+
+
             <p className="text-lg">
               These three concepts propel us to overcome contemporary, intricate business challenges and establish a clear perspective for transforming your organization. Our ultimate objective is to propel your business to its full potential.
             </p>

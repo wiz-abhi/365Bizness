@@ -36,8 +36,8 @@ const Footer = () => {
           {/* Contact Section */}
           <div className="md:ml-12"> {/* Increased margin-left */}
             <h3 className="text-white text-lg font-semibold mb-4">Contact</h3>
-            <a href="mailto:contact@365bizness.com" className="text-white hover:text-cyan-400 transition-colors">
-              contact@365bizness.com
+            <a href="mailto:yogeshsharma88943@gmail.com" className="text-white hover:text-cyan-400 transition-colors">
+            yogeshsharma88943@gmail.com
             </a>
           </div>
         </div>

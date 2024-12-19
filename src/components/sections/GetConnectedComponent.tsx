@@ -15,9 +15,12 @@ const GetConnectedComponent = () => {
         {/* Outer Content Box */}
         <div className="max-w-4xl mx-auto text-center">
           {/* Adjusted heading */}
-          <h1 className="text-4xl md:text-5xl font-bold mb-10 whitespace-nowrap overflow-hidden text-ellipsis">
-            Get Connected with the Changing World
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-10 sm:block">
+  Get Connected
+  <br className="sm:hidden" />
+  with the Changing World
+</h1>
+
 
           {/* Adjusted inner box to cover 70% of the display and changed color to darker blue */}
           <div className="bg-[#000033] rounded-lg shadow-lg py-10 px-12 w-[100%] mx-auto">
