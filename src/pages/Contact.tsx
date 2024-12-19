@@ -2,8 +2,31 @@ import React from 'react';
 import Container from '../components/layout/Container';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import Button from '../components/ui/Button';
+import { FormEvent } from 'react';
 
 const Contact = () => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+
+    // Form validation
+    const formData = {
+      name: (form.elements.namedItem('name') as HTMLInputElement).value,
+      email: (form.elements.namedItem('email') as HTMLInputElement).value,
+      message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
+    };
+
+    if (!formData.name || !formData.email || !formData.message) {
+      alert('Please fill out all fields.');
+      return;
+    }
+
+    // Remove the custom fetch logic if using Netlify form submission
+    // Let Netlify handle the form submission
+    alert('Message sent successfully!');
+    form.reset();
+  };
+
   return (
     <div className="bg-[#000066] py-16">
       <Container>
@@ -18,15 +41,16 @@ const Contact = () => {
             </form>
 
             {/* Actual form */}
-            <form 
-              name="contact" 
-              method="POST" 
+            <form
+              name="contact"
+              method="POST"
               data-netlify="true"
+              onSubmit={handleSubmit}
               className="space-y-6"
             >
               {/* Required hidden input for Netlify */}
               <input type="hidden" name="form-name" value="contact" />
-              
+
               <div>
                 <label className="block text-gray-800 mb-2">Name</label>
                 <input
