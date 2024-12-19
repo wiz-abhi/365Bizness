@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Welcome = () => {
   return (
-    <div className="relative h-[90vh] flex flex-col items-center justify-center text-white text-center">
+    <div className="relative h-[90vh] flex flex-col items-center mt-16 justify-center text-white text-center">
       {/* Background Color */}
       <div className="absolute inset-0 bg-[#000066] z-0"></div>
       
@@ -28,9 +28,9 @@ const Welcome = () => {
 
       {/* Image Below Button */}
       <img
-        src="/images/welcome-image.jpg" // Adjust the path as needed
+        src="/images/welcome.jpg" // Adjust the path as needed
         alt="Business Welcome"
-        className="relative mt-24 h-[300px] w-full z-10"
+        className="relative mt-24 mb-16 h-[300px] w-full z-10"
       />
     </div>
   );

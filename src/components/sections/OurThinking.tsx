@@ -6,7 +6,7 @@ const OurThinking = () => {
     <div className="bg-[#000066] pt-20 pb-10">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="rounded-full overflow-hidden w-[500px] h-[500px] mx-auto">
+          <div className="rounded-full overflow-hidden w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] mx-auto">
             <img
               src="images/bulb.jpg"
               alt="Innovation"

@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhatWeAre = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-12 items-center">
       <div>
         <h2 className="text-3xl font-bold mb-6 text-cyan-400">WHAT WE ARE</h2>
         <p className="text-xl text-cyan-400 mb-6 italic">
@@ -15,13 +15,13 @@ const WhatWeAre = () => {
           <li>
             Our innovative and experienced team is there to overcome the toughest and 
             most complex business challenges. From innovative strategies to creative 
-            thinking and everything in between, our team drives actionable result that 
-            creates a long-term impact. For us, you are everything; we put you first at every turn.
+            thinking and everything in between, our team drives actionable results that 
+            create a long-term impact. For us, you are everything; we put you first at every turn.
           </li>
           <li className="italic">
             Our thinking: PLANNING • IMPLEMENTATION • GROWTH provides a sense of belief to people, 
             which is why, from everything apart, we keep our thinking at the topmost. 
-            After all, "Building today will transform tomorrow"
+            After all, "Building today will transform tomorrow."
           </li>
         </ul>
       </div>

@@ -6,23 +6,23 @@ const Services = () => {
   const services = [
     {
       icon: <BarChart className="w-12 h-12 text-cyan-400" />,
-      title: 'Business Analytics',
-      description: 'Comprehensive data analysis and insights to drive informed business decisions.'
+      title: 'GROWTH AND STRATEGIC PLANNING ',
+      description: 'Our team of experienced professionals is dedicated to enhancing your business strategy and promoting sustainable revenue growth. We offer tailored solutions that meet your unique business needs by leveraging our deep industry expertise and creative approaches. We take a holistic view of your organizations challenges, opportunities, and goals, which allows us to create practical and effective strategies.'
     },
     {
       icon: <Users className="w-12 h-12 text-cyan-400" />,
-      title: 'Team Development',
-      description: 'Build and nurture high-performing teams through expert training programs.'
+      title: 'Digital Marketing',
+      description: 'We provide a wide range of marketing and advertising services tailored to help you reach your target audience and boost your brand\'s visibility. Our experienced team uses creative strategies and top-notch techniques to achieve meaningful and measurable results for your campaigns.',
     },
     {
       icon: <Lightbulb className="w-12 h-12 text-cyan-400" />,
-      title: 'Innovation Strategy',
-      description: 'Develop and implement innovative solutions to stay ahead in the market.'
+      title: 'Human Consulting',
+      description: 'We offer tailored human resources consulting services aimed at improving workforce management and driving organizational success. Our extensive suite of services includes talent acquisition and recruitment, along with strategies for employee retention. Designed to address the unique needs of each client, our team provides customized solutions that yield real results.',
     },
     {
       icon: <TrendingUp className="w-12 h-12 text-cyan-400" />,
-      title: 'Growth Planning',
-      description: 'Strategic planning and execution for sustainable business growth.'
+      title: 'IT Services and Support',
+      description: 'We provide a wide range of IT solutions and support services designed to improve your business operations and boost productivity. Our skills include website development and design, along with robust cybersecurity measures, guaranteeing customized solutions that enhance efficiency and safeguard your digital assets.',
     }
   ];
 

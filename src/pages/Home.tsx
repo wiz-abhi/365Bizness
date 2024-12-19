@@ -26,9 +26,9 @@ const Home = () => {
           <h1 className="text-4xl font-bold mb-8">About 365 Bizness</h1>
           <div className="space-y-16">
             <WhoWeAre />
-            <Startup/>
             <WhatWeAre />
             <WhyWeAre />
+            <Startup/>
           </div>
         </div>
         <section className="w-full h-[300px] mt-20 pb-5">
