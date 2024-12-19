@@ -2,44 +2,8 @@ import React from 'react';
 import Container from '../components/layout/Container';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import Button from '../components/ui/Button';
-import { FormEvent } from 'react';
 
 const Contact = () => {
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = e.target as HTMLFormElement;
-    
-    // Form validation
-    const formData = {
-      name: (form.elements.namedItem('name') as HTMLInputElement).value,
-      email: (form.elements.namedItem('email') as HTMLInputElement).value,
-      message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
-    };
-
-    if (!formData.name || !formData.email || !formData.message) {
-      alert('Please fill out all fields.');
-      return;
-    }
-
-    // Let Netlify handle the form submission
-    try {
-      await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-          'form-name': 'contact',
-          ...formData
-        }).toString()
-      });
-      
-      alert('Message sent successfully!');
-      form.reset();
-    } catch (error) {
-      console.error('Error:', error);
-      alert('Error sending message. Please try again.');
-    }
-  };
-  
   return (
     <div className="bg-[#000066] py-16">
       <Container>
@@ -58,7 +22,6 @@ const Contact = () => {
               name="contact" 
               method="POST" 
               data-netlify="true"
-              onSubmit={handleSubmit} 
               className="space-y-6"
             >
               {/* Required hidden input for Netlify */}
