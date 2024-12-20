@@ -14,7 +14,7 @@ const WhoWeAre = () => {
         <h2 className="text-3xl font-bold mb-6 text-cyan-400">WHO WE ARE</h2>
         <p className="text-lg mb-4">Hello Everyone, good to see you!</p>
         <p className="text-gray-300 leading-relaxed">
-          We are 365 Business Origin. A modern business agency for transformation, 
+          We are 365-Bizness. A modern business agency for transformation, 
           innovation across industries, and performance. Our thought is that every 
           minute of our client is of great importance that is what unites us all. 
           Our main objective is to create a positive contribution for our client 
