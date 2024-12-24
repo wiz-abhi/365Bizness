@@ -6,7 +6,7 @@ const Services = () => {
   const services = [
     {
       icon: <BarChart className="w-12 h-12 text-cyan-400" />,
-      title: 'GROWTH AND STRATEGIC PLANNING ',
+      title: 'Growth and Strategic Planning',
       description: 'Our team of experienced professionals is dedicated to enhancing your business strategy and promoting sustainable revenue growth. We offer tailored solutions that meet your unique business needs by leveraging our deep industry expertise and creative approaches. We take a holistic view of your organizations challenges, opportunities, and goals, which allows us to create practical and effective strategies.'
     },
     {
