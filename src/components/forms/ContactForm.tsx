@@ -9,8 +9,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Set the form submission status to true after the form is submitted
+    // Simple form submission handling in React, no need for netlify-specific handling
     setIsSubmitted(true);
   };
 
@@ -20,10 +19,9 @@ const ContactForm = () => {
         <form
           name="contact"
           method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
+          action="/submit_form.php" // Form will submit to the PHP backend
           onSubmit={handleSubmit}
-          className="space-y-6 bg-white p-6 rounded-lg shadow-md" // Add bg-white class for white background
+          className="space-y-6 bg-white p-6 rounded-lg shadow-md"
         >
           {/* Hidden field to identify the form */}
           <input type="hidden" name="form-name" value="contact" />

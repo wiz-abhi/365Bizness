@@ -14,7 +14,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <Link to="/" className="flex items-center space-x-2">
           <img
-            src="images/logo.jpg" // Path to your logo image
+            src="images/logo.png" // Path to your logo image
             alt="Logo"
             className="h-12 w-12 object-contain"
           />
