@@ -19,7 +19,7 @@ const ContactForm = () => {
         <form
           name="contact"
           method="POST"
-          action="/submit_form.php" // Form will submit to the PHP backend
+          action="/php/submit_form.php" // Form will submit to the PHP backend
           onSubmit={handleSubmit}
           className="space-y-6 bg-white p-6 rounded-lg shadow-md"
         >
